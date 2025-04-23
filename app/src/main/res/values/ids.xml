@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="recyclerView" type="id" />
+    <item name="priceRangeSpinner" type="id" />
+    <item name="availabilityCheckBox" type="id" />
+    <item name="roomTypeSpinner" type="id" />
+    <item name="foodId" type="id" />
+    <item name="foodType" type="id" />
+    <item name="foodName" type="id" />
+    <item name="foodDescription" type="id" />
+    <item name="foodVegStatus" type="id" />
+    <item name="update_button" type="id" />
+</resources>

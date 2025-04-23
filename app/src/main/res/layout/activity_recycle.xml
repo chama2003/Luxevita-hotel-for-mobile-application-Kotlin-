@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".recycle">
+
+    <!-- Spinner for room types -->
+
+    <!-- CheckBox for availability -->
+
+    <Spinner
+        android:id="@+id/roomTypeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="88dp"
+        android:entries="@array/room_types"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toStartOf="@+id/availabilityCheckBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Spinner for price range -->
+
+    <!-- RecyclerView for displaying filtered rooms -->
+
+    <CheckBox
+        android:id="@+id/availabilityCheckBox"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="6dp"
+        android:text="Available Rooms"
+        app:layout_constraintBaseline_toBaselineOf="@+id/priceRangeSpinner"
+        app:layout_constraintEnd_toStartOf="@+id/priceRangeSpinner"
+        app:layout_constraintStart_toEndOf="@+id/roomTypeSpinner" />
+
+    <Spinner
+        android:id="@+id/priceRangeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="88dp"
+        android:entries="@array/price_ranges"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/availabilityCheckBox"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceRangeSpinner" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="396dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

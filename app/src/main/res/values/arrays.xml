@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="service_types">
+        <item>All</item>
+        <item>Spa Treatment</item>
+        <item>Fine Dining</item>
+        <item>Poolside Cabana</item>
+        <item>Guided Beach Tour</item>
+    </string-array>
+
+    <!-- Price range options -->
+    <string-array name="price">
+        <item>60</item>
+        <item>150</item>
+        <item>250</item>
+        <item>450</item>
+        <item>500</item>
+    </string-array>
+
+</resources>

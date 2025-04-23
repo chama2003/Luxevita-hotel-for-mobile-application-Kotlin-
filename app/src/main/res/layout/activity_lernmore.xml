@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".lernmore">
+
+    <!-- Hero Image -->
+    <ImageView
+        android:id="@+id/heroImage"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/hero_image"
+        app:srcCompat="@drawable/c"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/overviewTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Overview of Luxe Vita"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/heroImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/overviewDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Luxe Vita is a luxurious hotel that combines elegance, comfort, and exceptional service to create unforgettable experiences for our guests. Our hotel is designed to cater to the needs of modern travelers, offering state-of-the-art facilities, premium accommodations, and a serene ambiance. From spacious, well-appointed rooms to world-class dining and wellness amenities, Luxe Vita ensures a seamless blend of relaxation and sophistication. Whether you're visiting for business, leisure, or a special occasion, our dedicated staff is committed to providing personalized service and making your stay truly memorable. At Luxe Vita, we go beyond expectations, creating a sanctuary where luxury meets vitality."
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/overviewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Back"
+        android:backgroundTint="#4CAF50"
+
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/overviewDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

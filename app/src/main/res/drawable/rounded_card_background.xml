@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Define the shape of the background -->
+    <solid android:color="#FFFFFF" /> <!-- Background color, e.g., white -->
+    <corners android:radius="16dp" /> <!-- Rounded corners with a 16dp radius -->
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp" /> <!-- Optional padding -->
+    <elevation android:value="4dp" /> <!-- Optional shadow effect -->
+</shape>
