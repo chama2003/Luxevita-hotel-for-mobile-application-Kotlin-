@@ -35,7 +35,7 @@
 - **LiveData & ViewModel** – Reactive UI updates
 - **Coroutines** – Asynchronous database operations
 
----
 
-## 🗂 Project Structure
+
+
 
